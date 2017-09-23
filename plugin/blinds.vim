@@ -15,6 +15,6 @@ endif
 augroup blinds
     au!
     au WinEnter * setlocal winhighlight=
-    au WinLeave * setlocal winhighlight=Normal:Blinds,CursorColumn:Blinds,CursorLine:Blinds
+    au WinLeave * setlocal winhighlight=Normal:Blinds,CursorColumn:Blinds,CursorLine:Blinds,ColorColumn:Blinds
 augroup END
 
