@@ -6,11 +6,11 @@ blinds.nvim emphasizes the current window by shading the other windows.
 
 # Customization
 
-Just redefine the `Blinds` highlight group in your `init.vim` with the preferred colors.
+Set variable `g:blinds_guibg` to the desired color in `init.vim`.
 
 Example that will shade the other windows in grey:
 
-    hi Blinds guibg=#969694
+    let g:blinds_guibg = "#969694"
 
 # Requirements
 
