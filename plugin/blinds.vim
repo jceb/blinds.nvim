@@ -19,7 +19,7 @@ endfun
 augroup blinds
     au!
     au WinEnter,BufEnter * setlocal winhighlight=
-    au WinLeave * setlocal winhighlight=Normal:Blinds,EndOfBuffer:Blinds,CursorColumn:Blinds,CursorLine:Blinds,ColorColumn:Blinds
+    au WinLeave * setlocal winhighlight=ColorColumn:Blinds,CursorColumn:Blinds,CursorLine:Blinds,EndOfBuffer:Blinds,LineNr:Blinds,NonText:Blinds,Normal:Blinds
     au ColorScheme * call s:SetBlinds()
 augroup END
 
