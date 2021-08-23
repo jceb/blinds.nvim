@@ -1,6 +1,6 @@
 # blinds.nvim emphasizes the current window
 
-blinds.nvim emphasizes the current window by shading the other windows.
+blinds.nvim emphasizes the current window by shading the non-active windows.
 
 ![Blinds animation](blinds.gif)
 
