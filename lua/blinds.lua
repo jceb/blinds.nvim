@@ -33,7 +33,8 @@ vim.api.nvim_create_autocmd({ "WinLeave" }, {
     local winid = vim.api.nvim_get_current_win()
     -- local bufnr = vim.api.nvim_get_current_buf()
     vim.defer_fn(function()
-      if vim.api.nvim_win_is_valid(winid) then
+      local current_winid = vim.api.nvim_get_current_win()
+      if winid ~= current_winid and vim.api.nvim_win_is_valid(winid) then
         vim.wo[winid].winhighlight =
           "ColorColumn:Blinds,CursorColumn:Blinds,CursorLine:Blinds,EndOfBuffer:Blinds,LineNr:Blinds,CursorLineNr:Blinds,CursorLineSign:Blinds,CursorLineFold:Blinds,NonText:Blinds,Normal:Blinds,FoldColumn:Blinds,SignColumn:Blinds,VertSplit:Blinds,Whitespace:Blinds,WinSeparator:Blinds"
       end
