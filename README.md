@@ -4,7 +4,7 @@ blinds.nvim emphasizes the current window by shading the non-active windows.
 
 ![Blinds animation](blinds.gif)
 
-# Installation
+## Installation
 
 Lazy:
 
@@ -12,27 +12,21 @@ Lazy:
 {
   -- https://github.com/jceb/blinds.nvim
   "jceb/blinds.nvim",
-  -- init = function()
-  --   vim.g.blinds_guibg = "##969694" -- custom color
-  -- end,
   config = true,
 }
 ```
 
-# Customization
-
-Set variable `g:blinds_guibg` to the desired color in `init.vim`.
-
-Example that will shade the other windows in grey:
-
-```vim
-let g:blinds_guibg = "#969694"
-```
-
-or via lua:
+## Default configuration
 
 ```lua
-vim.g.blinds_guibg = "##969694"
+{
+  -- background color
+  guibg = "#969694",
+  -- Limit blinds to certain file types, "*" matches all file types.
+  ft = { "*" },
+  -- Exclude certain file types from blinds.
+  excluded = { "aerial" },
+}
 ```
 
 # Requirements
