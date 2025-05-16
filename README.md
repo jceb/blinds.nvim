@@ -13,10 +13,15 @@ Lazy:
   -- https://github.com/jceb/blinds.nvim
   "jceb/blinds.nvim",
   config = true,
+  opts = {
+    -- see default configuration
+  }
 }
 ```
 
 ## Default configuration
+
+Place any value that shall customized inside `opts`:
 
 ```lua
 {
