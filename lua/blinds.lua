@@ -7,7 +7,7 @@ local M = {}
 -- Default configuration
 local default_config = {
   -- background color
-  guibg = "#969694",
+  guibg = vim.o.background == "dark" and "#234e67" or "969694",
   -- Limit blinds to certain file types, "*" matches all file types.
   ft = { "*" },
   -- Exclude certain file types from blinds.
